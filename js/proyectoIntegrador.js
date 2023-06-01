@@ -4,7 +4,7 @@ function simularPrestamo() {
         if (monto <= 0 || plazo <= 0) {
         alert("El monto y el plazo deben ser mayores a cero.");
         } else {
-        let tasaInteresAnual = 0.1; // Tasa de interés anual fija del 10%
+        let tasaInteresAnual = 0.1; 
         let tasaInteresMensual = tasaInteresAnual / 12;
         
         let cuotaMensual = monto * (tasaInteresMensual / (1 - Math.pow(1 + tasaInteresMensual, -plazo)));
